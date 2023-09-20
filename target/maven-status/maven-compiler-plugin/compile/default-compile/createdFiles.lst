@@ -1,0 +1,10 @@
+Pages\termsAndConditionPage.class
+Pages\addToCartPage.class
+Utilities\commonFunction.class
+Utilities\ExtentManager.class
+BasePackage\BasePage.class
+Pages\finalCheckOutPage.class
+Pages\HomePage.class
+Pages\checkoutPage.class
+Utilities\ReadingPropertiesFile.class
+Utilities\Screenshot.class

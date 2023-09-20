@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\abhishekkumar18\eclipse-workspace\java_selenium_assignment\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods, 1 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.VerifySingleItemOrderType" class="method navigator-link" hash-for-method="VerifySingleLineMultiQtyOrder">VerifySingleLineMultiQtyOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.VerifyAddToCartFuntionality" class="method navigator-link" hash-for-method="AddToCart">AddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.VerifySearchFuntioanlityOnHomePage" class="method navigator-link" hash-for-method="FailedTestcase_matchingSearchedProduct">FailedTestcase_matchingSearchedProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.VerifyOrderCannotBePlacedWithoutSelectingTermsAndConditions" class="method navigator-link" hash-for-method="FailingTestCase_notSelectTermsAndCondition">FailingTestCase_notSelectTermsAndCondition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.VerifyUserCanNavigateToTermsAndConditionsPage" class="method navigator-link" hash-for-method="NavigateToTermsAndConditionsPage">NavigateToTermsAndConditionsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.VerifyMultipleItemOrderType" class="method navigator-link" hash-for-method="VerifyMultiLIneOrder">VerifyMultiLIneOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.VerifyMultipleItemOrderType" class="method navigator-link" hash-for-method="VerifyMultiLineMultiQtyOrder">VerifyMultiLineMultiQtyOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.VerifySingleItemOrderType" class="method navigator-link" hash-for-method="VerifySingleLineOrder">VerifySingleLineOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.VerifyProductDetailsInMiniBasket" class="method navigator-link" hash-for-method="checkDetailsInMiniBasket">checkDetailsInMiniBasket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.VerifyProductDetailsInCheckoutPage" class="method navigator-link" hash-for-method="checkoutPage">checkoutPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.VerifyProductsAreDisplayedOnTheHomePage" class="method navigator-link" hash-for-method="imageAreDisplayedOrNot">imageAreDisplayedOrNot</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.VerifySearchFuntioanlityOnHomePage" class="method navigator-link" hash-for-method="matchingSearchedProduct">matchingSearchedProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.VerifyOrderCannotBePlacedWithoutSelectingTermsAndConditions" class="method navigator-link" hash-for-method="selectTermsAndCondition">selectTermsAndCondition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.VerifyProductImagePriceAndAddToCartButtonAreDisplayedForEachProduct" class="method navigator-link" hash-for-method="verifyAllElements">verifyAllElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.VerifySingleItemOrderType</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifySingleLineMultiQtyOrder">
+                  </a> <!-- VerifySingleLineMultiQtyOrder -->
+                  <span class="method-name">VerifySingleLineMultiQtyOrder</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testcases.VerifySingleItemOrderType.VerifySingleLineMultiQtyOrder(VerifySingleItemOrderType.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.VerifyProductDetailsInMiniBasket</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDetailsInMiniBasket">
+                  </a> <!-- checkDetailsInMiniBasket -->
+                  <span class="method-name">checkDetailsInMiniBasket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.VerifyProductsAreDisplayedOnTheHomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="imageAreDisplayedOrNot">
+                  </a> <!-- imageAreDisplayedOrNot -->
+                  <span class="method-name">imageAreDisplayedOrNot</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.VerifyProductImagePriceAndAddToCartButtonAreDisplayedForEachProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAllElements">
+                  </a> <!-- verifyAllElements -->
+                  <span class="method-name">verifyAllElements</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.VerifyMultipleItemOrderType</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyMultiLIneOrder">
+                  </a> <!-- VerifyMultiLIneOrder -->
+                  <span class="method-name">VerifyMultiLIneOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyMultiLineMultiQtyOrder">
+                  </a> <!-- VerifyMultiLineMultiQtyOrder -->
+                  <span class="method-name">VerifyMultiLineMultiQtyOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.VerifySearchFuntioanlityOnHomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FailedTestcase_matchingSearchedProduct">
+                  </a> <!-- FailedTestcase_matchingSearchedProduct -->
+                  <span class="method-name">FailedTestcase_matchingSearchedProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="matchingSearchedProduct">
+                  </a> <!-- matchingSearchedProduct -->
+                  <span class="method-name">matchingSearchedProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.VerifySingleItemOrderType</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifySingleLineOrder">
+                  </a> <!-- VerifySingleLineOrder -->
+                  <span class="method-name">VerifySingleLineOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.VerifyUserCanNavigateToTermsAndConditionsPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NavigateToTermsAndConditionsPage">
+                  </a> <!-- NavigateToTermsAndConditionsPage -->
+                  <span class="method-name">NavigateToTermsAndConditionsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.VerifyOrderCannotBePlacedWithoutSelectingTermsAndConditions</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FailingTestCase_notSelectTermsAndCondition">
+                  </a> <!-- FailingTestCase_notSelectTermsAndCondition -->
+                  <span class="method-name">FailingTestCase_notSelectTermsAndCondition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectTermsAndCondition">
+                  </a> <!-- selectTermsAndCondition -->
+                  <span class="method-name">selectTermsAndCondition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.VerifyAddToCartFuntionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddToCart">
+                  </a> <!-- AddToCart -->
+                  <span class="method-name">AddToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.VerifyProductDetailsInCheckoutPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkoutPage">
+                  </a> <!-- checkoutPage -->
+                  <span class="method-name">checkoutPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\abhishekkumar18\eclipse-workspace\java_selenium_assignment\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;BasePackage.BasePage&quot;/&gt;
+      &lt;class name=&quot;testcases.VerifyProductsAreDisplayedOnTheHomePage&quot;/&gt;
+      &lt;class name=&quot;testcases.VerifySearchFuntioanlityOnHomePage&quot;/&gt;
+      &lt;class name=&quot;testcases.VerifyProductImagePriceAndAddToCartButtonAreDisplayedForEachProduct&quot;/&gt;
+      &lt;class name=&quot;testcases.VerifyAddToCartFuntionality&quot;/&gt;
+      &lt;class name=&quot;testcases.VerifyProductDetailsInMiniBasket&quot;/&gt;
+      &lt;class name=&quot;testcases.VerifyProductDetailsInCheckoutPage&quot;/&gt;
+      &lt;class name=&quot;testcases.VerifyOrderCannotBePlacedWithoutSelectingTermsAndConditions&quot;/&gt;
+      &lt;class name=&quot;testcases.VerifyUserCanNavigateToTermsAndConditionsPage&quot;/&gt;
+      &lt;class name=&quot;testcases.VerifySingleItemOrderType&quot;/&gt;
+      &lt;class name=&quot;testcases.VerifyMultipleItemOrderType&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (11 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'VerifyMultiLineMultiQtyOrder')
+data.setCell(0, 2, 'testcases.VerifyMultipleItemOrderType')
+data.setCell(0, 3, 1642);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'FailingTestCase_notSelectTermsAndCondition')
+data.setCell(1, 2, 'testcases.VerifyOrderCannotBePlacedWithoutSelectingTermsAndConditions')
+data.setCell(1, 3, 1317);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'VerifySingleLineMultiQtyOrder')
+data.setCell(2, 2, 'testcases.VerifySingleItemOrderType')
+data.setCell(2, 3, 1283);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'VerifyMultiLIneOrder')
+data.setCell(3, 2, 'testcases.VerifyMultipleItemOrderType')
+data.setCell(3, 3, 1277);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'selectTermsAndCondition')
+data.setCell(4, 2, 'testcases.VerifyOrderCannotBePlacedWithoutSelectingTermsAndConditions')
+data.setCell(4, 3, 1244);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'NavigateToTermsAndConditionsPage')
+data.setCell(5, 2, 'testcases.VerifyUserCanNavigateToTermsAndConditionsPage')
+data.setCell(5, 3, 1218);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'VerifySingleLineOrder')
+data.setCell(6, 2, 'testcases.VerifySingleItemOrderType')
+data.setCell(6, 3, 1181);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkoutPage')
+data.setCell(7, 2, 'testcases.VerifyProductDetailsInCheckoutPage')
+data.setCell(7, 3, 969);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyAllElements')
+data.setCell(8, 2, 'testcases.VerifyProductImagePriceAndAddToCartButtonAreDisplayedForEachProduct')
+data.setCell(8, 3, 753);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkDetailsInMiniBasket')
+data.setCell(9, 2, 'testcases.VerifyProductDetailsInMiniBasket')
+data.setCell(9, 3, 452);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'FailedTestcase_matchingSearchedProduct')
+data.setCell(10, 2, 'testcases.VerifySearchFuntioanlityOnHomePage')
+data.setCell(10, 3, 326);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'matchingSearchedProduct')
+data.setCell(11, 2, 'testcases.VerifySearchFuntioanlityOnHomePage')
+data.setCell(11, 3, 317);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'AddToCart')
+data.setCell(12, 2, 'testcases.VerifyAddToCartFuntionality')
+data.setCell(12, 3, 307);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'imageAreDisplayedOrNot')
+data.setCell(13, 2, 'testcases.VerifyProductsAreDisplayedOnTheHomePage')
+data.setCell(13, 3, 70);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.VerifyProductsAreDisplayedOnTheHomePage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void testcases.VerifyProductsAreDisplayedOnTheHomePage.imageAreDisplayedOrNot())</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">imageAreDisplayedOrNot</span>
+                <span class="method-start">3907 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testStatus([TestResult name=imageAreDisplayedOrNot status=SUCCESS method=VerifyProductsAreDisplayedOnTheHomePag...)</span>
+                <span class="method-start">3980 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.VerifySearchFuntioanlityOnHomePage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void testcases.VerifySearchFuntioanlityOnHomePage.FailedTestcase_matchingSearchedProduct())</span>
+                <span class="method-start">4853 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">FailedTestcase_matchingSearchedProduct</span>
+                <span class="method-start">7767 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testStatus([TestResult name=FailedTestcase_matchingSearchedProduct status=SUCCESS method=VerifySearchFuntioanli...)</span>
+                <span class="method-start">8094 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void testcases.VerifySearchFuntioanlityOnHomePage.matchingSearchedProduct())</span>
+                <span class="method-start">8782 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">matchingSearchedProduct</span>
+                <span class="method-start">11751 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testStatus([TestResult name=matchingSearchedProduct status=SUCCESS method=VerifySearchFuntioanlityOnHomePage.ma...)</span>
+                <span class="method-start">12069 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.VerifyProductImagePriceAndAddToCartButtonAreDisplayedForEachProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void testcases.VerifyProductImagePriceAndAddToCartButtonAreDisplayedForEachProduct.verifyAllE...)</span>
+                <span class="method-start">12795 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAllElements</span>
+                <span class="method-start">15654 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testStatus([TestResult name=verifyAllElements status=SUCCESS method=VerifyProductImagePriceAndAddToCartButtonAr...)</span>
+                <span class="method-start">16408 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.VerifyAddToCartFuntionality</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void testcases.VerifyAddToCartFuntionality.AddToCart())</span>
+                <span class="method-start">17121 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AddToCart</span>
+                <span class="method-start">20085 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testStatus([TestResult name=AddToCart status=SUCCESS method=VerifyAddToCartFuntionality.AddToCart()[pri:0, inst...)</span>
+                <span class="method-start">20392 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.VerifyProductDetailsInMiniBasket</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void testcases.VerifyProductDetailsInMiniBasket.checkDetailsInMiniBasket())</span>
+                <span class="method-start">21050 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkDetailsInMiniBasket</span>
+                <span class="method-start">23983 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testStatus([TestResult name=checkDetailsInMiniBasket status=SUCCESS method=VerifyProductDetailsInMiniBasket.che...)</span>
+                <span class="method-start">24435 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.VerifyProductDetailsInCheckoutPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void testcases.VerifyProductDetailsInCheckoutPage.checkoutPage())</span>
+                <span class="method-start">25138 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkoutPage</span>
+                <span class="method-start">28051 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testStatus([TestResult name=checkoutPage status=SUCCESS method=VerifyProductDetailsInCheckoutPage.checkoutPage(...)</span>
+                <span class="method-start">29020 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.VerifyOrderCannotBePlacedWithoutSelectingTermsAndConditions</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void testcases.VerifyOrderCannotBePlacedWithoutSelectingTermsAndConditions.FailingTestCase_no...)</span>
+                <span class="method-start">29744 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">FailingTestCase_notSelectTermsAndCondition</span>
+                <span class="method-start">33584 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testStatus([TestResult name=FailingTestCase_notSelectTermsAndCondition status=SUCCESS method=VerifyOrderCannotB...)</span>
+                <span class="method-start">34901 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void testcases.VerifyOrderCannotBePlacedWithoutSelectingTermsAndConditions.selectTermsAndCond...)</span>
+                <span class="method-start">35580 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectTermsAndCondition</span>
+                <span class="method-start">38049 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testStatus([TestResult name=selectTermsAndCondition status=SUCCESS method=VerifyOrderCannotBePlacedWithoutSelec...)</span>
+                <span class="method-start">39293 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.VerifyUserCanNavigateToTermsAndConditionsPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void testcases.VerifyUserCanNavigateToTermsAndConditionsPage.NavigateToTermsAndConditionsPage...)</span>
+                <span class="method-start">40005 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">NavigateToTermsAndConditionsPage</span>
+                <span class="method-start">42479 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testStatus([TestResult name=NavigateToTermsAndConditionsPage status=SUCCESS method=VerifyUserCanNavigateToTerms...)</span>
+                <span class="method-start">43698 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.VerifySingleItemOrderType</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void testcases.VerifySingleItemOrderType.VerifySingleLineMultiQtyOrder())</span>
+                <span class="method-start">44358 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifySingleLineMultiQtyOrder</span>
+                <span class="method-start">46774 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testStatus([TestResult name=VerifySingleLineMultiQtyOrder status=FAILURE method=VerifySingleItemOrderType.Verif...)</span>
+                <span class="method-start">48057 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void testcases.VerifySingleItemOrderType.VerifySingleLineOrder())</span>
+                <span class="method-start">49117 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifySingleLineOrder</span>
+                <span class="method-start">52244 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testStatus([TestResult name=VerifySingleLineOrder status=SUCCESS method=VerifySingleItemOrderType.VerifySingleL...)</span>
+                <span class="method-start">53425 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.VerifyMultipleItemOrderType</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void testcases.VerifyMultipleItemOrderType.VerifyMultiLIneOrder())</span>
+                <span class="method-start">54133 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyMultiLIneOrder</span>
+                <span class="method-start">56575 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testStatus([TestResult name=VerifyMultiLIneOrder status=SUCCESS method=VerifyMultipleItemOrderType.VerifyMultiL...)</span>
+                <span class="method-start">57852 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void testcases.VerifyMultipleItemOrderType.VerifyMultiLineMultiQtyOrder())</span>
+                <span class="method-start">58535 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyMultiLineMultiQtyOrder</span>
+                <span class="method-start">61498 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testStatus([TestResult name=VerifyMultiLineMultiQtyOrder status=SUCCESS method=VerifyMultipleItemOrderType.Veri...)</span>
+                <span class="method-start">63141 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
