@@ -29,6 +29,6 @@ public class termsAndConditionPage {
 		driver.close();
 	}
 	
-	
+	//---------------
 
 }
